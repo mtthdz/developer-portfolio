@@ -235,6 +235,6 @@ html {
   overflow: hidden;
 }
 
-body {
-  background-color: black;
+.portfolio__project .project__image {
+  display: none;
 }
