@@ -1,0 +1,39 @@
+
+html {
+  // 16px * 62.5% = 10px
+  font-size: 62.5%;
+}
+
+body {
+  // 10px * 1.6rem = 16px
+  font-size: 1.6rem;
+  font-family: $primaryFont;
+  color: $secondaryColor;
+  background-color: $primaryColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $secondaryColor;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+

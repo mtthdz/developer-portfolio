@@ -1,0 +1,57 @@
+
+// variables
+
+$primaryColor: #1a1a1a;
+$secondaryColor: #ffffff;
+
+$primaryFont: 'Roboto', sans-serif;
+
+
+// mixins
+@mixin head__title($color) {
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 2.0rem;
+  text-transform: lowercase;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+@mixin secondary__title($color) {
+  font-family: $primaryFont;
+  font-weight: 300;
+  font-size: 2.0rem;
+  text-transform: lowercase;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+@mixin tertiary__title($color) {
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+@mixin paragraph($color) {
+  font-family: $primaryFont;
+  font-weight: 300;
+  font-size: 2.0rem;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $color;
+}
+
+@mixin project__title($color, $size) {
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: $size;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: $color;
+}
