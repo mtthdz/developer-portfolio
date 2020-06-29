@@ -266,7 +266,45 @@ a {
 }
 
 .wrapper {
-  max-width: 1200px;
-  width: 90%;
+  max-width: 1600px;
+  width: 95%;
   margin: 0 auto;
+}
+
+.head {
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head .head__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.head .head__email {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.project__image {
+  display: none;
 }

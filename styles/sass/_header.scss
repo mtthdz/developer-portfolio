@@ -1,0 +1,16 @@
+.head {
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .head__title {
+    @include head__title($secondaryColor);
+  }
+
+  .head__email {
+    @include paragraph($secondaryColor);
+  }
+}

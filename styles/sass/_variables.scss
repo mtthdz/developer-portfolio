@@ -9,12 +9,12 @@ $primaryFont: 'Roboto', sans-serif;
 
 // mixins
 @mixin head__title($color) {
+  margin: 0;
   font-family: $primaryFont;
-  font-weight: 700;
-  font-size: 2.0rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   text-transform: lowercase;
   line-height: normal;
-  letter-spacing: 1px;
   color: $color;
 }
 
@@ -24,7 +24,6 @@ $primaryFont: 'Roboto', sans-serif;
   font-size: 2.0rem;
   text-transform: lowercase;
   line-height: normal;
-  letter-spacing: 1px;
   color: $color;
 }
 
@@ -34,16 +33,14 @@ $primaryFont: 'Roboto', sans-serif;
   font-size: 2.5rem;
   text-transform: lowercase;
   line-height: normal;
-  letter-spacing: 1px;
   color: $color;
 }
 
 @mixin paragraph($color) {
   font-family: $primaryFont;
   font-weight: 300;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   line-height: normal;
-  letter-spacing: 1px;
   color: $color;
 }
 
@@ -52,6 +49,5 @@ $primaryFont: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: $size;
   line-height: normal;
-  letter-spacing: 1px;
   color: $color;
 }
