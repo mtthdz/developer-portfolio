@@ -241,6 +241,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   background-color: #1a1a1a;
@@ -305,6 +306,28 @@ a {
   color: #ffffff;
 }
 
-.project__image {
+.portfolio {
+  margin: 8% auto 20%;
+}
+
+.portfolio .portfolio__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-transform: lowercase;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.portfolio__project .project__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14rem;
+  text-transform: uppercase;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.portfolio__project .project__image {
   display: none;
 }

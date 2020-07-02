@@ -21,7 +21,7 @@ $primaryFont: 'Roboto', sans-serif;
 @mixin secondary__title($color) {
   font-family: $primaryFont;
   font-weight: 300;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   text-transform: lowercase;
   line-height: normal;
   color: $color;
@@ -30,7 +30,7 @@ $primaryFont: 'Roboto', sans-serif;
 @mixin tertiary__title($color) {
   font-family: $primaryFont;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   text-transform: lowercase;
   line-height: normal;
   color: $color;
@@ -48,6 +48,7 @@ $primaryFont: 'Roboto', sans-serif;
   font-family: $primaryFont;
   font-weight: 700;
   font-size: $size;
+  text-transform: uppercase;
   line-height: normal;
   color: $color;
 }
