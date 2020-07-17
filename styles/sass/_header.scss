@@ -10,7 +10,7 @@
     @include head__title($secondaryColor);
   }
 
-  .head__email {
+  .head__about {
     @include paragraph($secondaryColor);
   }
 }

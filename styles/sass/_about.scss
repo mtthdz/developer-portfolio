@@ -1,0 +1,19 @@
+.about {
+  margin: 0 auto 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  .about__link {
+    margin-bottom: 25px;
+  }
+
+
+  .about__divider {
+    height: 5px;
+    width: 80%;
+    background-color: $secondaryColor;
+  }
+}
