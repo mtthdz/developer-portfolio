@@ -1,23 +1,38 @@
 
 .portfolio {
-  margin: 8% auto 20%;
+  margin: 150px auto 20%;
+  // border: 1px white solid;
 
   .portfolio__title {
     @include secondary__title($secondaryColor);
   }
 
   .portfolio__list {
-    
+    // border: 1px white solid;
   }
 }
 
 .portfolio__project {
+  // border: 1px yellow solid;
+  // display: flex;
+  // justify-content: space-between;
+  position: relative;
+
   .project__title {
-    @include project__title($secondaryColor, 14.0rem);
+    @include project__title($secondaryColor, 15.0rem);
+    // border: 1px white solid;
+    z-index: 10;
+
   }
 
   .project__image {
-  display: none;
+    display: none;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    width: 600px;
+
   }
 }
 

@@ -291,8 +291,7 @@ a {
 .head .head__title {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: lowercase;
   line-height: normal;
   color: #ffffff;
@@ -301,33 +300,44 @@ a {
 .head .head__email {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: normal;
   color: #ffffff;
 }
 
 .portfolio {
-  margin: 8% auto 20%;
+  margin: 150px auto 20%;
 }
 
 .portfolio .portfolio__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: lowercase;
   line-height: normal;
   color: #ffffff;
 }
 
+.portfolio__project {
+  position: relative;
+}
+
 .portfolio__project .project__title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15rem;
   text-transform: uppercase;
-  line-height: normal;
+  line-height: 1.1;
+  vertical-align: top;
   color: #ffffff;
+  z-index: 10;
 }
 
 .portfolio__project .project__image {
   display: none;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  right: 0;
+  width: 600px;
 }
