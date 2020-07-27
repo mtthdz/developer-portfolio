@@ -301,7 +301,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
-  line-height: normal;
+  line-height: 1.4;
   color: #ffffff;
 }
 
@@ -316,6 +316,7 @@ a {
   text-transform: lowercase;
   line-height: normal;
   color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .portfolio__project {
@@ -347,33 +348,73 @@ a {
   transition: all 0.5s ease;
 }
 
-.about {
+.highlighted__project {
+  background-color: #e6cfcf;
+  color: #1a1a1a;
+}
+
+.highlighted__project .head .head__title {
+  color: #1a1a1a;
+}
+
+.highlighted__project .head .head__about {
+  color: #1a1a1a;
+}
+
+.highlighted {
   margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.about .about__name {
+.highlighted .highlighted__main-content {
+  position: relative;
+  width: 40%;
+}
+
+.highlighted .highlighted__main-content .highlighted__back-option {
+  color: #1a1a1a;
+}
+
+.highlighted .highlighted__main-content .highlighted__back-option::before {
+  content: "\003C";
+  margin-right: 5px;
+}
+
+.highlighted .highlighted__main-content .highlighted__title {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 8rem;
+  font-size: 15rem;
   text-transform: uppercase;
   line-height: 1.1;
   vertical-align: top;
-  color: #ffffff;
+  color: #1a1a1a;
+  margin: 35px 0 10px;
 }
 
-.about .about__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 8rem;
-  text-transform: uppercase;
-  line-height: 1.1;
-  vertical-align: top;
-  color: #ffffff;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
+.highlighted .highlighted__main-content .highlighted__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-transform: lowercase;
+  line-height: normal;
+  color: #1a1a1a;
+  margin-bottom: 35px;
 }
 
-.about .about__content {
-  width: 30%;
+.highlighted .highlighted__main-content .highlighted__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.highlighted .highlighted__gallery {
+  width: 50%;
 }

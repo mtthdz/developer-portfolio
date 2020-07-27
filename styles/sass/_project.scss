@@ -1,0 +1,53 @@
+.highlighted__project {
+  background-color: $tertiaryColor;
+  color: $primaryColor;
+  
+  .head {
+    .head__title {
+      color: $primaryColor;
+    }
+
+    .head__about {
+      color: $primaryColor;
+    }
+  }
+}
+
+.highlighted {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  .highlighted__main-content {
+    position: relative;
+    width: 40%;
+
+    .highlighted__back-option {
+      color: $primaryColor;
+    }
+
+    .highlighted__back-option::before {
+      content: "\003C";
+      margin-right: 5px;
+    }
+
+    .highlighted__title {
+      @include project__title($primaryColor, 15.0rem);
+      margin: 35px 0 10px;
+    }
+
+    .highlighted__subtitle {
+      @include secondary__title($primaryColor);
+      margin-bottom: 35px;
+    }
+
+    .highlighted__paragraph {
+      @include paragraph($primaryColor);
+      margin-bottom: 10px;
+    }
+  }
+
+  .highlighted__gallery {
+    width: 50%;
+  }
+}
