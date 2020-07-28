@@ -24,11 +24,31 @@
 
     .highlighted__back-option {
       color: $primaryColor;
+      transition: all 0.5s ease;
     }
 
     .highlighted__back-option::before {
-      content: "\003C";
+      content: "\003c";
       margin-right: 5px;
+      transition: all 0.5s ease;
+    }
+
+    .highlighted__back-option:hover,
+    .highlighted__back-option:focus {
+      color: lighten($primaryColor, 30);
+    }
+
+    .stat {
+      @include project__title($primaryColor, 1.4rem);
+      margin: 4px auto;
+    }
+
+    .stat:first-child {
+      margin-top: 60px;
+    }
+
+    .stat:last-child {
+      margin-bottom: 40px;
     }
 
     .highlighted__title {
@@ -45,9 +65,49 @@
       @include paragraph($primaryColor);
       margin-bottom: 10px;
     }
+
   }
 
   .highlighted__gallery {
     width: 50%;
   }
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+
+  .social__option {
+    margin-right: 20px;
+
+    .social__link {
+      @include paragraph($primaryColor);
+    }
+
+    .social__link:hover,
+    .social__link:focus {
+      transition: all 0.5s ease;
+      color: lighten($primaryColor, 30);
+    }
+  }
+}
+
+.nav {
+  // width: 50%;
+  margin: 50px auto 20px;
+
+  .nav__title {
+    @include paragraph($primaryColor);
+  }
+
+  .nav__option {
+    @include project__title($primaryColor, 7.5rem);
+    transition: all 0.5s ease;
+  }
+
+
+  .nav__option:hover,
+  .nav__option:focus {
+    letter-spacing: -2px;
+  } 
 }

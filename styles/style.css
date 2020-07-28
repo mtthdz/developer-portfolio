@@ -261,6 +261,11 @@ a {
   color: #ffffff;
 }
 
+a:hover,
+a:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -378,11 +383,39 @@ a {
 
 .highlighted .highlighted__main-content .highlighted__back-option {
   color: #1a1a1a;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .highlighted .highlighted__main-content .highlighted__back-option::before {
-  content: "\003C";
+  content: "\003c";
   margin-right: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.highlighted .highlighted__main-content .highlighted__back-option:hover,
+.highlighted .highlighted__main-content .highlighted__back-option:focus {
+  color: #676767;
+}
+
+.highlighted .highlighted__main-content .stat {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  vertical-align: top;
+  color: #1a1a1a;
+  margin: 4px auto;
+}
+
+.highlighted .highlighted__main-content .stat:first-child {
+  margin-top: 60px;
+}
+
+.highlighted .highlighted__main-content .stat:last-child {
+  margin-bottom: 40px;
 }
 
 .highlighted .highlighted__main-content .highlighted__title {
@@ -417,4 +450,59 @@ a {
 
 .highlighted .highlighted__gallery {
   width: 50%;
+}
+
+.socials {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials .social__option {
+  margin-right: 20px;
+}
+
+.socials .social__option .social__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.socials .social__option .social__link:hover,
+.socials .social__option .social__link:focus {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #676767;
+}
+
+.nav {
+  margin: 50px auto 20px;
+}
+
+.nav .nav__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.nav .nav__option {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  vertical-align: top;
+  color: #1a1a1a;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav .nav__option:hover,
+.nav .nav__option:focus {
+  letter-spacing: -2px;
 }
