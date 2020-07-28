@@ -70,6 +70,14 @@
 
   .highlighted__gallery {
     width: 50%;
+
+    .gallery__image {
+      margin-bottom: 10px;
+    }
+
+    .gallery__image:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -94,20 +102,32 @@
 
 .nav {
   // width: 50%;
-  margin: 50px auto 20px;
-
-  .nav__title {
-    @include paragraph($primaryColor);
-  }
+  margin: 50px auto 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   .nav__option {
-    @include project__title($primaryColor, 7.5rem);
-    transition: all 0.5s ease;
+
+    .nav__title {
+      @include paragraph($primaryColor);
+    }
+
+    .nav__project {
+      @include project__title($primaryColor, 7.5rem);
+      transition: all 0.5s ease;
+    }
+
+
+    .nav__project:hover,
+    .nav__project:focus {
+      letter-spacing: -2px;
+    } 
   }
 
-
-  .nav__option:hover,
-  .nav__option:focus {
-    letter-spacing: -2px;
-  } 
+  .nav__option:nth-child(2) {
+    .nav__title {
+      text-align: right;
+    }
+  }
 }

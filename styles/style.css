@@ -452,6 +452,14 @@ a:focus {
   width: 50%;
 }
 
+.highlighted .highlighted__gallery .gallery__image {
+  margin-bottom: 10px;
+}
+
+.highlighted .highlighted__gallery .gallery__image:last-child {
+  margin-bottom: 0px;
+}
+
 .socials {
   margin-top: 30px;
   display: -webkit-box;
@@ -479,10 +487,20 @@ a:focus {
 }
 
 .nav {
-  margin: 50px auto 20px;
+  margin: 50px auto 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.nav .nav__title {
+.nav .nav__option .nav__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
@@ -490,7 +508,7 @@ a:focus {
   color: #1a1a1a;
 }
 
-.nav .nav__option {
+.nav .nav__option .nav__project {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 7.5rem;
@@ -502,7 +520,11 @@ a:focus {
   transition: all 0.5s ease;
 }
 
-.nav .nav__option:hover,
-.nav .nav__option:focus {
+.nav .nav__option .nav__project:hover,
+.nav .nav__option .nav__project:focus {
   letter-spacing: -2px;
+}
+
+.nav .nav__option:nth-child(2) .nav__title {
+  text-align: right;
 }
