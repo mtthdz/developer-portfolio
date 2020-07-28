@@ -68,14 +68,15 @@
 
   }
 
-  .highlighted__gallery {
+  .highlighted__banner {
     width: 50%;
 
-    .gallery__image {
-      margin-bottom: 10px;
+    .banner__image {
+      margin-bottom: 20px;
+      float: right;
     }
 
-    .gallery__image:last-child {
+    .banner__image:last-child {
       margin-bottom: 0px;
     }
   }

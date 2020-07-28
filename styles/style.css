@@ -448,15 +448,16 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.highlighted .highlighted__gallery {
+.highlighted .highlighted__banner {
   width: 50%;
 }
 
-.highlighted .highlighted__gallery .gallery__image {
-  margin-bottom: 10px;
+.highlighted .highlighted__banner .banner__image {
+  margin-bottom: 20px;
+  float: right;
 }
 
-.highlighted .highlighted__gallery .gallery__image:last-child {
+.highlighted .highlighted__banner .banner__image:last-child {
   margin-bottom: 0px;
 }
 
