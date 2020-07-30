@@ -4,11 +4,11 @@
 
   .portfolio__title {
     @include secondary__title($secondaryColor);
+    margin-bottom: 35px;
   }
 }
 
 .portfolio__project {
-
   position: relative;
 
   .project__title {

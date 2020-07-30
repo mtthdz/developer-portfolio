@@ -1,0 +1,134 @@
+.highlighted__project {
+  background-color: $tertiaryColor;
+  color: $primaryColor;
+  
+  .head {
+    .head__title {
+      color: $primaryColor;
+    }
+
+    .head__about {
+      color: $primaryColor;
+    }
+  }
+}
+
+.highlighted {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  .highlighted__main-content {
+    position: relative;
+    width: 40%;
+
+    .highlighted__back-option {
+      color: $primaryColor;
+      transition: all 0.5s ease;
+    }
+
+    .highlighted__back-option::before {
+      content: "\003c";
+      margin-right: 5px;
+      transition: all 0.5s ease;
+    }
+
+    .highlighted__back-option:hover,
+    .highlighted__back-option:focus {
+      color: lighten($primaryColor, 30);
+    }
+
+    .stat {
+      @include project__title($primaryColor, 1.4rem);
+      margin: 4px auto;
+    }
+
+    .stat:first-child {
+      margin-top: 60px;
+    }
+
+    .stat:last-child {
+      margin-bottom: 40px;
+    }
+
+    .highlighted__title {
+      @include project__title($primaryColor, 15.0rem);
+      margin: 35px 0 10px;
+    }
+
+    .highlighted__subtitle {
+      @include secondary__title($primaryColor);
+      margin-bottom: 35px;
+    }
+
+    .highlighted__paragraph {
+      @include paragraph($primaryColor);
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .highlighted__banner {
+    width: 50%;
+
+    .banner__image {
+      margin-bottom: 20px;
+      float: right;
+    }
+
+    .banner__image:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+
+  .social__option {
+    margin-right: 20px;
+
+    .social__link {
+      @include paragraph($primaryColor);
+    }
+
+    .social__link:hover,
+    .social__link:focus {
+      transition: all 0.5s ease;
+      color: lighten($primaryColor, 30);
+    }
+  }
+}
+
+.nav {
+  // width: 50%;
+  margin: 50px auto 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .nav__option {
+
+    .nav__title {
+      @include paragraph($primaryColor);
+    }
+
+    .nav__project {
+      @include project__title($primaryColor, 7.5rem);
+      transition: all 0.5s ease;
+    }
+
+
+    .nav__project:hover,
+    .nav__project:focus {
+      letter-spacing: -2px;
+    } 
+  }
+
+  .nav__option:nth-child(2) {
+    .nav__title {
+      text-align: right;
+    }
+  }
+}

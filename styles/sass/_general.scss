@@ -27,6 +27,11 @@ a {
   color: $secondaryColor;
 }
 
+a:hover,
+a:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
