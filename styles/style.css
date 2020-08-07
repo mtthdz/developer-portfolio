@@ -354,7 +354,7 @@ a:focus {
 }
 
 .highlighted__project {
-  background-color: #e6cfcf;
+  background-color: #b3b3d3;
   color: #1a1a1a;
 }
 
@@ -448,17 +448,33 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.highlighted .highlighted__banner {
+.highlighted .highlighted__gallery {
   width: 50%;
 }
 
-.highlighted .highlighted__banner .banner__image {
+.highlighted .highlighted__gallery .gallery__image {
   margin-bottom: 20px;
   float: right;
 }
 
-.highlighted .highlighted__banner .banner__image:last-child {
+.highlighted .highlighted__gallery .banner__image:last-child {
   margin-bottom: 0px;
+}
+
+.paragraph__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #b3b3d3;
+  color: #575796;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.paragraph__link:hover,
+.paragraph__link:active {
+  color: #676767;
 }
 
 .socials {
@@ -488,7 +504,7 @@ a:focus {
 }
 
 .nav {
-  margin: 50px auto 10%;
+  margin: 100px auto 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
