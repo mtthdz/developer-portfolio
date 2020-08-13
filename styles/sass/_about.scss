@@ -1,0 +1,30 @@
+.about {
+  margin-bottom: 100px;
+
+  .about__paragraph {
+    width: 30%;
+    margin-right: 10%;
+    @include paragraph($secondaryColor);
+    margin-bottom: 50px;
+  }
+}
+
+.about__contact-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  .contact__method {
+    margin-right: 15px;
+
+    .contact__link {
+      @include paragraph($secondaryColor);
+      transition: all 0.5s ease;
+    }
+
+    .contact__link:hover,
+    .contact_-link:focus {
+      color: darken($secondaryColor, 30);
+    }
+  }
+}

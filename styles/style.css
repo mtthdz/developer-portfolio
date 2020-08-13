@@ -302,12 +302,19 @@ a:focus {
   color: #ffffff;
 }
 
-.head .head__about {
+.head .head__email {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.4;
   color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.head .head__email:hover,
+.head .head__email:focus {
+  color: #b3b3b3;
 }
 
 .portfolio {
@@ -344,13 +351,62 @@ a:focus {
 .portfolio__project .project__image {
   position: absolute;
   z-index: -10;
-  top: 0;
+  top: 0px;
   right: 0px;
   max-height: 500px;
   max-width: 700px;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.portfolio__project:last-child .project__image {
+  top: -100px;
+}
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about .about__paragraph {
+  width: 30%;
+  margin-right: 10%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.about__contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about__contact-list .contact__method {
+  margin-right: 15px;
+}
+
+.about__contact-list .contact__method .contact__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.about__contact-list .contact__method .contact__link:hover,
+.about__contact-list .contact__method .contact_-link:focus {
+  color: #b3b3b3;
 }
 
 .highlighted__project {
@@ -362,8 +418,13 @@ a:focus {
   color: #1a1a1a;
 }
 
-.highlighted__project .head .head__about {
+.highlighted__project .head .head__email {
   color: #1a1a1a;
+}
+
+.highlighted__project .head .head__email:hover,
+.highlighted__project .head .head__email:focus {
+  color: #676767;
 }
 
 .highlighted {

@@ -15,25 +15,27 @@
     @include project__title($secondaryColor, 15.0rem);
     z-index: 10;
     transition: all 0.5s ease;
-
-
-    // text stroke example
-    // -webkit-text-fill-color: transparent;
-    // -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: #ffffff;
-
   }
 
   .project__image {
     position: absolute;
     z-index: -10;
-    top: 0;
+    top: 0px;
     right: 0px;
     max-height: 500px;
     max-width: 700px;
     opacity: 0;
 
     transition: all 0.5s ease;
+  }
+
+
+}
+
+.portfolio__project:last-child {
+
+  .project__image {
+    top: -100px;
   }
 }
 
