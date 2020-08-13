@@ -7,8 +7,13 @@
       color: $primaryColor;
     }
 
-    .head__about {
+    .head__email {
       color: $primaryColor;
+    }
+
+    .head__email:hover,
+    .head__email:focus {
+      color: lighten($primaryColor, 30);
     }
   }
 }
@@ -68,10 +73,10 @@
 
   }
 
-  .highlighted__banner {
+  .highlighted__gallery {
     width: 50%;
 
-    .banner__image {
+    .gallery__image {
       margin-bottom: 20px;
       float: right;
     }
@@ -80,6 +85,17 @@
       margin-bottom: 0px;
     }
   }
+}
+
+.paragraph__link {
+  @include paragraph($tertiaryColor);
+  color: darken($tertiaryColor, 30);
+  transition: all 0.5s ease;
+}
+
+.paragraph__link:hover,
+.paragraph__link:active {
+  color: lighten($primaryColor, 30);
 }
 
 .socials {
@@ -101,9 +117,9 @@
   }
 }
 
+
 .nav {
-  // width: 50%;
-  margin: 50px auto 10%;
+  margin: 100px auto 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
