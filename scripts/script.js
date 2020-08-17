@@ -28,5 +28,13 @@
 // })
 
 const swup = new Swup({
-  plugins: [new SwupBodyClassPlugin()]
+  plugins: [
+    new SwupBodyClassPlugin(),
+    new SwupScrollPlugin({
+      doScrollingRightAway: false,
+      animateScroll: true,
+      scrollFriction: 0.3,
+      scrollAcceleration: 0.04,
+    })
+  ]
 });
