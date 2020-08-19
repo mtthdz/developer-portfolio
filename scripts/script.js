@@ -1,28 +1,39 @@
-const main = {
 
+
+function projectHover () {
+  const project = document.getElementsByClassName('project__title');
+
+  Array.from(project).forEach(function(title) {
+    title.addEventListener("mouseover", function() {
+      this.className = "project__title--shown";
+      this.parentNode.childNodes[3].className = "project__image--shown";
+    })
+
+    title.addEventListener("mouseleave", function() {
+      this.className = "project__title";
+      this.parentNode.childNodes[3].className = "project__image";
+    })
+  
+  })
 }
 
-main.hover = () => {
-  $(".project__title").hover(
-    function () {
-      $(this).css("color", "#b3b3d3")
-      $(this).css("letter-spacing", "-2px")
-      $(this).next().css("opacity", "1.0")
-      $(this).next().css("right", "80px")
-    },
-    function () {
-      $(this).css("color", "#ffffff")
-      $(this).css("letter-spacing", "normal")
-      $(this).next().css("opacity", "0")
-      $(this).next().css("right", "0px")
-    }
-  )
+const swup = new Swup({
+  plugins: [
+    new SwupBodyClassPlugin(),
+    new SwupScrollPlugin({
+      doScrollingRightAway: false,
+      animateScroll: true,
+      scrollFriction: 0.3,
+      scrollAcceleration: 0.04,
+    })
+  ]
+});
+
+
+function init () {
+  projectHover();
 }
 
-main.init = function () {
-  this.hover();
-}
-
-$(function () {
-  main.init();
-})
+init();
+// event listener will reload hover fn everytime swup is triggered
+document.addEventListener('swup:contentReplaced', init);

@@ -1,0 +1,9 @@
+.transition-fade {
+  transition: 1.0s;
+  opacity: 1;
+  // color: $primaryColor;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}

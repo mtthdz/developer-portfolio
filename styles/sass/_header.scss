@@ -1,3 +1,9 @@
+
+.home__page {
+  color: $secondaryColor;
+  background-color: $primaryColor;  
+}
+
 .head {
   margin: 40px auto;
 
@@ -17,9 +23,6 @@
 
   .head__email:hover,
   .head__email:focus {
-    color: darken($secondaryColor, 30);
-    
+    color: darken($secondaryColor, 30); 
   }
-
-
 }

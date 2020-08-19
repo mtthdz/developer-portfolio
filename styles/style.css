@@ -243,8 +243,6 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  background-color: #1a1a1a;
 }
 
 img {
@@ -275,6 +273,11 @@ a:focus {
   max-width: 1600px;
   width: 95%;
   margin: 0 auto;
+}
+
+.home__page {
+  color: #ffffff;
+  background-color: #1a1a1a;
 }
 
 .head {
@@ -348,6 +351,19 @@ a:focus {
   transition: all 0.5s ease;
 }
 
+.portfolio__project .project__title--shown {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  vertical-align: top;
+  color: #999999;
+  z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .portfolio__project .project__image {
   position: absolute;
   z-index: -10;
@@ -360,8 +376,16 @@ a:focus {
   transition: all 0.5s ease;
 }
 
-.portfolio__project:last-child .project__image {
-  top: -100px;
+.portfolio__project .project__image--shown {
+  position: absolute;
+  z-index: -10;
+  top: 0px;
+  right: 0px;
+  max-height: 500px;
+  max-width: 700px;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .about {
@@ -409,21 +433,21 @@ a:focus {
   color: #b3b3b3;
 }
 
-.highlighted__project {
-  background-color: #b3b3d3;
+.project__page {
+  background-color: #f5d9d9;
   color: #1a1a1a;
 }
 
-.highlighted__project .head .head__title {
+.project__page .head .head__title {
   color: #1a1a1a;
 }
 
-.highlighted__project .head .head__email {
+.project__page .head .head__email {
   color: #1a1a1a;
 }
 
-.highlighted__project .head .head__email:hover,
-.highlighted__project .head .head__email:focus {
+.project__page .head .head__email:hover,
+.project__page .head .head__email:focus {
   color: #676767;
 }
 
@@ -527,8 +551,8 @@ a:focus {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #b3b3d3;
-  color: #575796;
+  color: #f5d9d9;
+  color: #d56060;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -605,4 +629,14 @@ a:focus {
 
 .nav .nav__option:nth-child(2) .nav__title {
   text-align: right;
+}
+
+.transition-fade {
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }

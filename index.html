@@ -8,44 +8,46 @@
   
   <title>mtthdz</title>
 </head>
-<body>
+
+<body class="home__page">
+  
   <header class="head wrapper">
     <h1 class="head__title">mtthdz</h1>
     <a href="to:matt.hernandez94@gmail.com" class="head__email">email</a>
   </header>
 
 
-  <main class="portfolio wrapper">
+  <main class="portfolio wrapper transition-fade" id="swup">
     <h2 class="portfolio__title">recent work</h2>
     <ul class="portfolio__list">
       <li class="portfolio__project"> 
-        <a href="./toned.html" class="project__title">toned</a>
+        <a href="/toned.html" class="project__title">toned</a>
         <img src="./assets/toned-banner.jpg" alt="" class="project__image">
       </li>
 
       <li class="portfolio__project">
-        <a href="./nygma.html" class="project__title">nygma</a>
+        <a href="/nygma.html" class="project__title">nygma</a>
         <img src="./assets/nygma-banner.jpg" alt="" class="project__image">
       </li>
 
       <li class="portfolio__project">
-        <a href="./pokebattle.html" class="project__title">pokebattle</a>
+        <a href="/pokebattle.html" class="project__title">pokebattle</a>
         <img src="./assets/pokebattle-banner.jpg" alt="" class="project__image">
       </li>
 
       <li class="portfolio__project">
-        <a href="./drumkit.html" class="project__title">drumkit</a>
+        <a href="/drumkit.html" class="project__title">drumkit</a>
         <img src="./assets/drumkit-banner.jpg" alt="" class="project__image">
       </li>
 
       <li class="portfolio__project">
-        <a href="./willow.html" class="project__title">willow</a>
+        <a href="/willow.html" class="project__title">willow</a>
         <img src="./assets/willow-banner.jpg" alt="" class="project__image">
       </li>
     </ul>
   </main>
 
-  <section class="about wrapper">
+  <section class="about wrapper transition-fade" id="swup">
     <p class="about__paragraph">I'm Matt Hernandez, I'm a Front End Web Developer based in Toronto. I recently graduated from Juno's Web Development Immersive bootcamp in April, and I'm currently available for work. All of my current and past projects can be found on my Github.</p>
 
     <ul class="about__contact-list">
@@ -56,14 +58,11 @@
     </ul>
   </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script src="./node_modules/swup/dist/swup.min.js"></script>
+  <script src="./node_modules/@swup/body-class-plugin/dist/SwupBodyClassPlugin.js"></script>
+  <script src="./node_modules/@swup/scroll-plugin/dist/SwupScrollPlugin.js"></script>
   <script src="./scripts/script.js"></script>
 
 </body>
 </html>
-
-<!-- tennis photo -->
-<!-- Photo by Sicong Li on Unsplash -->
-
-<!-- rave photo -->
-<!-- Photo by Chris Leipelt on Unsplash -->
