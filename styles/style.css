@@ -351,6 +351,19 @@ a:focus {
   transition: all 0.5s ease;
 }
 
+.portfolio__project .project__title--shown {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  vertical-align: top;
+  color: #999999;
+  z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .portfolio__project .project__image {
   position: absolute;
   z-index: -10;
@@ -363,8 +376,16 @@ a:focus {
   transition: all 0.5s ease;
 }
 
-.portfolio__project:last-child .project__image {
-  top: -100px;
+.portfolio__project .project__image--shown {
+  position: absolute;
+  z-index: -10;
+  top: 0px;
+  right: 0px;
+  max-height: 500px;
+  max-width: 700px;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .about {
@@ -413,7 +434,7 @@ a:focus {
 }
 
 .project__page {
-  background-color: #b3b3d3;
+  background-color: #f5d9d9;
   color: #1a1a1a;
 }
 
@@ -530,8 +551,8 @@ a:focus {
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #b3b3d3;
-  color: #575796;
+  color: #f5d9d9;
+  color: #d56060;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }

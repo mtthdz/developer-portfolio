@@ -1,31 +1,21 @@
-// const main = {
 
-// }
 
-// main.hover = () => {
-//   $(".project__title").hover(
-//     function () {
-//       $(this).css("color", "#b3b3d3")
-//       $(this).css("letter-spacing", "-2px")
-//       $(this).next().css("opacity", "1.0")
-//       $(this).next().css("right", "80px")
-//     },
-//     function () {
-//       $(this).css("color", "#ffffff")
-//       $(this).css("letter-spacing", "normal")
-//       $(this).next().css("opacity", "0")
-//       $(this).next().css("right", "0px")
-//     }
-//   )
-// }
+function projectHover () {
+  const project = document.getElementsByClassName('project__title');
 
-// main.init = function () {
-//   this.hover();
-// }
+  Array.from(project).forEach(function(title) {
+    title.addEventListener("mouseover", function() {
+      this.className = "project__title--shown";
+      this.parentNode.childNodes[3].className = "project__image--shown";
+    })
 
-// $(function () {
-//   main.init();
-// })
+    title.addEventListener("mouseleave", function() {
+      this.className = "project__title";
+      this.parentNode.childNodes[3].className = "project__image";
+    })
+  
+  })
+}
 
 const swup = new Swup({
   plugins: [
@@ -38,3 +28,12 @@ const swup = new Swup({
     })
   ]
 });
+
+
+function init () {
+  projectHover();
+}
+
+init();
+// event listener will reload hover fn everytime swup is triggered
+document.addEventListener('swup:contentReplaced', init);

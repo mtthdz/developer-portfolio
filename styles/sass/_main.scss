@@ -17,6 +17,13 @@
     transition: all 0.5s ease;
   }
 
+  // js hover state
+  .project__title--shown {
+    @include project__title(darken($secondaryColor, 40), 15.0rem);
+    z-index: 10;
+    transition: all 0.5s ease;    
+  }
+
   .project__image {
     position: absolute;
     z-index: -10;
@@ -29,13 +36,16 @@
     transition: all 0.5s ease;
   }
 
+  // js hover state
+  .project__image--shown {
+    position: absolute;
+    z-index: -10;
+    top: 0px;
+    right: 0px;
+    max-height: 500px;
+    max-width: 700px;    
+    opacity: 1;
 
-}
-
-.portfolio__project:last-child {
-
-  .project__image {
-    top: -100px;
+    transition: all 0.5s ease;
   }
 }
-

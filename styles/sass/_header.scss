@@ -1,3 +1,4 @@
+
 .home__page {
   color: $secondaryColor;
   background-color: $primaryColor;  
@@ -22,9 +23,6 @@
 
   .head__email:hover,
   .head__email:focus {
-    color: darken($secondaryColor, 30);
-    
+    color: darken($secondaryColor, 30); 
   }
-
-
 }
